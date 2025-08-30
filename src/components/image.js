@@ -5,11 +5,11 @@ const Image = () => {
   const [query, setQuery] = useState("");
   const [images, setImages] = useState([]);
 
-  const ACCESS_KEY = process.env.REACT_APP_ACCESS_KEY;
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  // const ACCESS_KEY = process.env.REACT_APP_ACCESS_KEY;
+  // const BASE_URL = process.env.REACT_APP_BASE_URL;
 
-  // const ACCESS_KEY = "t9EnqtKaegU3GnZTrC4lY_TfkScHMkfIDB2XpbxGrYM";
-  // const BASE_URL = "https://api.unsplash.com";
+  const ACCESS_KEY = "t9EnqtKaegU3GnZTrC4lY_TfkScHMkfIDB2XpbxGrYM";
+  const BASE_URL = "https://api.unsplash.com";
   const fetchImages = async () => {
     if (!query) return;
 
@@ -68,3 +68,4 @@ const Image = () => {
 };
 
 export default Image;
+
